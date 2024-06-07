@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>Responsive Scoreboard</title>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+               <h3>HOME</h3> 
+            </div>
+            <div>
+                <h3>GUEST</h3>
+            </div>
+        </div>
+        <div id="score">
+            <div id="scoreboardhome">0</div>
+            <div id="scoreboardguest">0</div>
+        </div>
+        <div id="timer">15:00</div>
+        <div id="points">
+            <div class="homebuttons">
+                    <button class="btn" onclick="add1home()">+1 </button>
+                    <button class="btn" onclick="add2home()">+2 </button>
+                    <button class="btn" onclick="add3home()">+3 </button>
+             </div>
+            <div class="guestbuttons">
+                    <button class="btn" onclick="add1guest()">+1 </button>
+                    <button class="btn" onclick="add2guest()">+2 </button>
+                    <button class="btn" onclick="add3guest()">+3 </button>
+            </div>
+        </div>
+            <div class="newgame">
+                <button class="newgame-btn" onclick="resetgame()">NEW GAME</button>
+            </div>
+            <script src="index.js"></script>
+    </body>
+</html>
